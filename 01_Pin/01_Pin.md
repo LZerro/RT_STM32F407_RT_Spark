@@ -1,20 +1,20 @@
 # PIN设备
 ## 1. 引脚简介
 > 芯片上的引脚一般分为 4 类：电源、时钟、控制与 I/O，I/O 口在使用模式上又分为 General Purpose Input Output（通用输入 / 输出），简称 GPIO，与功能复用 I/O（如 SPI/I2C/UART 等）。大多数 MCU 的引脚都不止一个功能。不同引脚内部结构不一样，拥有的功能也不一样。可以通过不同的配置，切换引脚的实际功能。通用 I/O 口主要特性如下：可编程控制中断：中断触发模式可配置，一般有下图所示 5 种中断触发模式：  
-![图片](../01_Pin\image\5种中断触发模式.png)  
+![图片](../01_Pin/image/5种中断触发模式.png)  
 输入输出模式可控制。  
 输出模式一般包括：推挽、开漏、上拉、下拉。引脚为输出模式时，可以通过配置引脚输出的电平状态为高电平或低电平来控制连接的外围设备。  
 输入模式一般包括：浮空、上拉、下拉、模拟。引脚为输入模式时，可以读取引脚的电平状态，即高电平或低电平
 ## 2. 基于Spark项目
 > ### 1.创建项目
-![图片](../01_Pin\image\创建项目.jpg)
-![图片](../01_Pin\image\创建项目2.png)
+![图片](../01_Pin/image/创建项目.jpg)
+![图片](../01_Pin/image/创建项目2.png)
 > ### 2.查找需要的PIN
-![图片](../01_Pin\image\PIN引脚.jpg)
+![图片](../01_Pin/image/PIN引脚.jpg)
 > ### 3.注释main代码
-![图片](../01_Pin\image\注释main代码.png)
+![图片](../01_Pin/image/注释main代码.png)
 > ### 4.编写新的线程代码
-![图片](../01_Pin\image\编写新的线程代码.jpg)
+![图片](../01_Pin/image/编写新的线程代码.jpg)
 ```C
 #include <rtthread.h>
 #include <rtdevice.h>
@@ -104,8 +104,8 @@ int thread_pin(void)
 MSH_CMD_EXPORT(thread_pin, thread_pin);
 ```
 > ### 5.编译下载
-![图片](../01_Pin\image\编译下载.png)
+![图片](../01_Pin/image/编译下载.png)
 > ### 6.运行
-![图片](../01_Pin\image\运行线程.png)
+![图片](../01_Pin/image/运行线程.png)
 > ### 6.运行结果
-![图片](../01_Pin\image\运行结果.png)
+![图片](../01_Pin/image/运行结果.png)
