@@ -11,9 +11,9 @@
 ### 2.2打开RTT_Settings 进行配置 打开PWM1 timer1  channel4
 ![图片](../03_PWM/image/RTT_Settings.png)
 ### 2.3CubeMX配置PWM1 timer1  channel4
-#### 先将PE14引脚释放  
+**先将PE14引脚释放**  
 ![图片](../03_PWM/image/CubeMX配置.png)  
-#### 配置PWM1 timer1  channel4
+**配置PWM1 timer1  channel4**
 ![图片](../03_PWM/image/CubeMX配置2.png)
 ### 2.4注释main函数 编写新的PWM LED程序
 ![图片](../03_PWM/image/注释main函数.png)
@@ -87,7 +87,7 @@ int thread_pwm_led(void)
 /* 导出到 msh 命令列表中 */
 MSH_CMD_EXPORT(thread_pwm_led, pwm sample);
 ```
-### 5.编译下载
+## 3.编译下载
 ![图片](../03_PWM/image/编译下载.png)
-### 6.运行测试
+## 4.运行测试
 ![图片](../03_PWM/image/项目结果.png)
